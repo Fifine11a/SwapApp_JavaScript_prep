@@ -327,3 +327,29 @@ figcaption {
   padding-top: 7px;
   padding-left: 44px;
 }
+
+button {
+  background-color: #212529;
+  color: #dee2e6;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  color: #ec6333;
+}
+
+.mainPageBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.mainPageBtn button {
+  font-size: 20px;
+  height: 70px;
+  width: 150px;
+  margin: 0 100px;
+}
