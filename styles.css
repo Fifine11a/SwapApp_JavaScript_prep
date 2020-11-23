@@ -328,6 +328,8 @@ figcaption {
   padding-left: 44px;
 }
 
+/* buttony */
+
 button {
   background-color: #212529;
   color: #dee2e6;
@@ -342,14 +344,15 @@ button:focus {
   color: #ec6333;
 }
 
-.mainPageBtn {
+.mainPageBtn,
+.searchCategoryBtn {
   display: flex;
   justify-content: center;
 }
 
-.mainPageBtn button {
+.mainPageBtn button,
+.searchCategoryBtn button {
   font-size: 20px;
   height: 70px;
   width: 150px;
-  margin: 0 100px;
 }
