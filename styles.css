@@ -183,33 +183,6 @@ figcaption {
   text-align: center;
 }
 
-/*
-.img_responsive {
-  height: auto;
-  width: 50%;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 100%;
-}
-
-.wireframe1 {
-  background-image: url(img/homepage.png);
-}
-.wireframe2 {
-  background-image: url(img/category.png);
-}
-.wireframe3 {
-  background-image: url(img/category_detail.png);
-}
-.wireframe4 {
-  background-image: url(img/detail.png);
-}
-.wireframe5 {
-  background-image: url(img/pravidla.png);
-}
-*/
-
 /* pro aboutus.html */
 .aboutUsPage {
   margin-left: 0 auto;
@@ -331,4 +304,26 @@ figcaption {
   font-size: 18px;
   line-height: 2em;
   padding-right: 20px;
+}
+
+/* stylování seznamů v pravidlech */
+
+.swap_demand,
+.swap_offer {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.swap_demand li {
+  background: url('img/left.png') no-repeat left top;
+  height: 34px;
+  padding-top: 7px;
+  padding-left: 44px;
+}
+
+.swap_offer li {
+  background: url('img/right.png') no-repeat left top;
+  height: 34px;
+  padding-top: 7px;
+  padding-left: 44px;
 }
