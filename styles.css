@@ -410,6 +410,13 @@ button:focus {
   }
 }
 
+@media screen and (min-width: 1150px) {
+  .searchCategoryBtn {
+    padding: 0 100px;
+    margin: 0 200px;
+  }
+}
+
 .searchCategoryBtn button {
   margin-bottom: 50px;
 }
