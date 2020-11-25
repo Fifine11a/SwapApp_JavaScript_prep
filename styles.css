@@ -311,21 +311,42 @@ figcaption {
 .swap_demand,
 .swap_offer {
   padding: 0;
-  margin: 0;
+  margin: 0 10px;
   list-style-type: none;
 }
-.swap_demand li {
-  background: url('img/left.png') no-repeat left top;
-  height: 34px;
-  padding-top: 7px;
-  padding-left: 44px;
+
+.swap_demand li,
+.swap_offer li {
+  position: relative;
+  padding-left: 45px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
-.swap_offer li {
-  background: url('img/right.png') no-repeat left top;
+.swap_demand li::before {
+  content: ' ';
+  background-image: url('img/left_li_bullet.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50px;
   height: 34px;
-  padding-top: 7px;
-  padding-left: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.swap_offer li::before {
+  content: ' ';
+  background-image: url('img/right_li_bullet.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 34px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* buttony */
