@@ -33,9 +33,8 @@ h1 {
   font-family: 'Amatic SC', Helvetica, sans-serif;
   font-weight: 700;
   font-size: 15vw;
-  margin: auto;
-  line-height: 6vw;
-  margin: 10vw auto;
+  line-height: 17vw;
+  margin: 15vw auto;
 }
 
 h2 {
@@ -408,7 +407,6 @@ button:focus {
   display: flex;
 }
 
-
 /*@media screen and (min-width: 1150px) {
   .searchCategoryBtn {
     padding: 0 100px;
@@ -431,16 +429,18 @@ button:focus {
 .homepageImg {
   max-width: 100%;
   bottom: 0;
+  position: absolute;
 }
 @media screen and (min-width: 992px) {
   .searchCategoryBtn button {
     margin-bottom: 100px;
     justify-content: center;
   }
-  
+
   .mainPageBtn button,
   .searchCategoryBtn button {
     font-size: 40px;
     line-height: 150px;
     width: 446px;
   }
+}
