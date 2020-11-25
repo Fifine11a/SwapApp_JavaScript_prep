@@ -404,6 +404,12 @@ button:focus {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .searchCategoryBtn {
+    margin: 0 100px;
+  }
+}
+
 .searchCategoryBtn button {
   margin-bottom: 50px;
 }
@@ -420,7 +426,3 @@ button:focus {
   position: absolute;
   bottom: 0;
 }
-
-/* demand */
-
-/* konec demand */
