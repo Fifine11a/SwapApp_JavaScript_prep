@@ -273,9 +273,8 @@ figcaption {
     margin: 80px;
     margin-bottom: 120px;
   }
-
+}
 /* konec header */
-
 
 /* footer */
 .footer_list {
@@ -389,7 +388,24 @@ button:focus {
 
 .searchCategoryBtn {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+  .searchCategoryBtn {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .searchCategoryBtn button {
+    margin: 50px;
+  }
+}
+
+.searchCategoryBtn button {
+  margin-bottom: 50px;
 }
 
 .mainPageBtn button,
@@ -404,3 +420,7 @@ button:focus {
   position: absolute;
   bottom: 0;
 }
+
+/* demand */
+
+/* konec demand */
