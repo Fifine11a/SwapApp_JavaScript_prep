@@ -262,6 +262,21 @@ figcaption {
   transform: translateY(0);
 }
 
+/* header */
+
+.header {
+  margin: 100px 40px;
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    margin: 80px;
+    margin-bottom: 120px;
+  }
+
+/* konec header */
+
+
 /* footer */
 .footer_list {
   display: inline-grid;
@@ -299,26 +314,25 @@ figcaption {
 
 /* konec footer */
 
-/* pro howto.html*/
+/* swapRules */
+
 .swap_lists {
   font-size: 18px;
   line-height: 2em;
   padding-right: 20px;
 }
 
-/* stylování seznamů v pravidlech */
-
 .swap_demand,
 .swap_offer {
   padding: 0;
-  margin: 0 10px;
+  margin: 0;
   list-style-type: none;
 }
 
 .swap_demand li,
 .swap_offer li {
   position: relative;
-  padding-left: 45px;
+  padding-left: 60px;
   padding-top: 5px;
   padding-bottom: 10px;
 }
@@ -328,12 +342,13 @@ figcaption {
   background-image: url('img/left_li_bullet.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   width: 50px;
   height: 34px;
   position: absolute;
   left: 0;
   top: 0;
+  padding: 0 10px;
 }
 
 .swap_offer li::before {
@@ -341,13 +356,15 @@ figcaption {
   background-image: url('img/right_li_bullet.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   width: 50px;
   height: 34px;
   position: absolute;
   left: 0;
   top: 0;
 }
+
+/* konec swapRules */
 
 /* buttony */
 
