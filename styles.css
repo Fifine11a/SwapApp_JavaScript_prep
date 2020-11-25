@@ -388,23 +388,20 @@ button:focus {
 
 .searchCategoryBtn {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
-@media screen and (min-width: 500px) {
-  .searchCategoryBtn {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .searchCategoryBtn button {
-    margin: 50px;
-  }
+.searchCategoryBtn button {
+  display: flex;
+}
+.footer {
+  display: none;
 }
 
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
   .searchCategoryBtn {
     margin: 0 100px;
   }
@@ -416,16 +413,17 @@ button:focus {
     margin: 0 200px;
   }
 }
-
+ */
 .searchCategoryBtn button {
-  margin-bottom: 50px;
+  margin-bottom: 10vw;
+  justify-content: center;
 }
 
 .mainPageBtn button,
 .searchCategoryBtn button {
-  font-size: 20px;
-  height: 70px;
-  width: 150px;
+  font-size: 4vw;
+  line-height: 15vw;
+  width: 45%;
 }
 
 .homepageImg {
