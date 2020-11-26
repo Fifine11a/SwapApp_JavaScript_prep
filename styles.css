@@ -445,3 +445,14 @@ button:focus {
     width: 446px;
   }
 }
+
+/* konec buttonů */
+
+/* kategorie */
+.breadcrumbsBtn {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+/* konec kategorie */
