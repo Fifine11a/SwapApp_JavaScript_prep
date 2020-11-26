@@ -34,7 +34,8 @@ h1 {
   font-weight: 700;
   font-size: 15vw;
   line-height: 17vw;
-  margin: 15vw auto;
+  margin: 0 auto;
+  margin-bottom: 15vw;
 }
 
 h2 {
