@@ -432,6 +432,7 @@ button:focus {
   bottom: 0;
   position: absolute;
 }
+
 @media screen and (min-width: 992px) {
   .searchCategoryBtn button {
     margin-bottom: 100px;
@@ -456,3 +457,35 @@ button:focus {
 }
 
 /* konec kategorie */
+
+/* detail položky */
+.itemOfferDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemOfferDetails img {
+  width: 100%;
+  height: auto;
+}
+
+.itemTitle {
+  font-weight: 800;
+  margin: 10px;
+}
+
+.itemText {
+  margin: 10px;
+  text-align: left;
+}
+
+.userNameOffer {
+  margin: 10px;
+  font-style: italic;
+}
+
+.userNameOffer:hover,
+.userNameOffer:focus {
+  color: #ec6333;
+}
+/* konec detailu položky */
