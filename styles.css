@@ -35,7 +35,7 @@ h1 {
   font-size: 15vw;
   line-height: 17vw;
   margin: 0 auto;
-  margin-bottom: 15vw;
+  margin-bottom: 5vw;
 }
 
 h2 {
@@ -44,10 +44,10 @@ h2 {
   text-align: left;
   font-family: 'Amatic SC', Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 8vw;
+  font-size: 45px;
   margin: 0 auto;
-  padding-left: 15px;
-  line-height: 3.5rem;
+  padding: 5px 0 5px 15px;
+  line-height: 45px;
 }
 
 h3 {
@@ -56,118 +56,25 @@ h3 {
   font-size: 5vw;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 100px;
+    line-height: 110px;
+  }
+  h2 {
+    font-size: 80px;
+    line-height: 85px;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+}
 
 .left {
   max-width: 200px;
   margin-left: -50px;
   margin-top: -50px;
 }
-
-/* hamburger menu*/
-#menuToggle {
-  display: block;
-  position: relative;
-  top: 20px;
-  left: 20px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a {
-  text-decoration: none;
-  color: #dee2e6;
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-  color: #ec6333;
-}
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0;
-  z-index: 2;
-
-  -webkit-touch-callout: none;
-}
-
-#menuToggle span {
-  display: block;
-  width: 5.5vw;
-  height: 1vw;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #212529;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #dee2e6;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  border-radius: 4px;
-
-  background: #212529;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-#menuToggle input:checked ~ ul {
-  transform: none;
-}
-/* konec hamburger menu*/
 
 /* pro wireframes.html */
 /* .list_of_wireframes {
@@ -279,50 +186,6 @@ figcaption {
 } */
 /* konec header */
 
-/* footer */
-@media screen and (max-width: 768px) {
-  .footer {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer_list {
-    display: inline-grid;
-    grid-gap: 30px;
-    justify-items: center;
-    margin: auto;
-    list-style: none;
-    letter-spacing: 0.1em;
-  }
-
-  @media (min-width: 500px) {
-    ul {
-      grid-auto-flow: column;
-    }
-  }
-
-  .footer_item a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .footer_item a:hover {
-    color: #ec6333;
-  }
-
-  .footer {
-    display: flex;
-    width: 100%;
-    background-color: #212529;
-    color: #dee2e6;
-    line-height: 57px;
-    left: 0;
-    bottom: 0;
-  }
-}
-
-/* konec footer */
-
 /* swapRules */
 
 .swap_lists {
@@ -372,7 +235,12 @@ figcaption {
   left: 0;
   top: 0;
 }
-
+@media screen and (min-width: 768px) {
+  .rulesPage {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
 /* konec swapRules */
 
 /* buttony */
@@ -425,25 +293,24 @@ button:focus {
   font-size: 4vw;
   line-height: 15vw;
   width: 45%;
+  margin-bottom: 5vw;
 }
 
-.homepageImg {
-  max-width: 100%;
-  bottom: 0;
-  position: absolute;
-}
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+  .searchCategoryBtn {
+    width: 768px;
+    margin: 0 auto;
+  }
   .searchCategoryBtn button {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     justify-content: center;
   }
 
   .mainPageBtn button,
   .searchCategoryBtn button {
     font-size: 40px;
-    line-height: 150px;
-    width: 446px;
+    line-height: 120px;
+    width: 370px;
   }
 }
 
@@ -489,3 +356,14 @@ button:focus {
   color: #ec6333;
 }
 /* konec detailu položky */
+/* homepage*/
+.mainPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepageImg {
+  max-width: 100%;
+  bottom: 0;
+}
+/* konec homepage*/
