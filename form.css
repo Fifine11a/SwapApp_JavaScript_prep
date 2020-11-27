@@ -1,52 +1,32 @@
-body {
-  background: #dee2e6;
-}
-.form-style-10 {
-  max-width: 450px;
-  padding: 30px;
-  margin: 40px auto;
+.formStyle {
+  max-width: 90%;
+  padding: 0 30px;
+  margin: 0 auto;
   background: #dee2e6;
   border-radius: 4px;
 }
-.form-style-10 .inner-wrap {
+.formStyle .inner-wrap {
   padding: 30px;
   background: #dee2e6;
   border-radius: 6px;
   margin-bottom: 15px;
 }
-.form-style-10 h1 {
-  background: #212529;
-  padding: 20px 30px 15px 30px;
-  margin: -30px -30px 30px -30px;
-  border-radius: 10px 10px 0 0;
-  color: #dee2e6;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-  font: normal 30px 'Bitter', serif;
-  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-  border: 1px solid #212529;
-}
-.form-style-10 h1 > span {
+.formStyle label {
   display: block;
-  margin-top: 2px;
-  font: 13px Arial, Helvetica, sans-serif;
-}
-.form-style-10 label {
-  display: block;
-  font: 13px Arial, Helvetica, sans-serif;
   color: #212529;
   margin-bottom: 15px;
 }
-.form-style-10 input[type='text'],
-.form-style-10 input[type='date'],
-.form-style-10 input[type='datetime'],
-.form-style-10 input[type='email'],
-.form-style-10 input[type='number'],
-.form-style-10 input[type='search'],
-.form-style-10 input[type='time'],
-.form-style-10 input[type='url'],
-.form-style-10 input[type='password'],
-.form-style-10 textarea,
-.form-style-10 select {
+.formStyle input[type='text'],
+.formStyle input[type='date'],
+.formStyle input[type='datetime'],
+.formStyle input[type='email'],
+.formStyle input[type='number'],
+.formStyle input[type='search'],
+.formStyle input[type='time'],
+.formStyle input[type='url'],
+.formStyle input[type='password'],
+.formStyle textarea,
+.formStyle select {
   display: block;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -62,12 +42,14 @@ body {
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 }
 
-.form-style-10 .section {
-  font: normal 20px 'Bitter', serif;
+.formStyle .section {
+  font-size: 1rem;
+  font-weight: 600;
   color: #212529;
   margin-bottom: 5px;
 }
-.form-style-10 .section span {
+
+.formStyle .section span {
   background: #ec6333;
   padding: 5px 10px 5px 10px;
   position: absolute;
@@ -80,8 +62,8 @@ body {
   color: #dee2e6;
   margin-top: -3px;
 }
-.form-style-10 input[type='button'],
-.form-style-10 input[type='submit'] {
+.formStyle input[type='button'],
+.formStyle input[type='submit'] {
   background: #212529;
   padding: 8px 20px 8px 20px;
   border-radius: 5px;
@@ -96,18 +78,27 @@ body {
   border: 1px solid #212529;
   font-size: 15px;
 }
-.form-style-10 input[type='button']:hover,
-.form-style-10 input[type='submit']:hover {
+.formStyle input[type='button']:hover,
+.formStyle input[type='submit']:hover {
   background: #ec6333;
   -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
   -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
   box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 }
-.form-style-10 .privacy-policy {
+.formStyle .privacy-policy {
   float: right;
   width: 250px;
-  font: 12px Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
   color: #212529;
-  margin-top: 10px;
   text-align: right;
+}
+.formNote {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.innerWrapCategory {
+  display: flex;
+  flex-direction: column;
 }
