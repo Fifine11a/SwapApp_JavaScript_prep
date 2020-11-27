@@ -3,8 +3,26 @@ fieldset {
   display: inline-block;
   padding: 0 0 0 40px;
   background: #fff;
-  border: solid 1px #212529;
+  border: solid 2px #212529;
   border-radius: 4px;
+}
+.searchAndInfos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.infoBtn {
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  background-color: #dee2e6;
+}
+.infoBtn:hover {
+  background-color: #ec6333;
+}
+.questionMark {
+  height: 2.5rem;
 }
 .searchForm {
   display: flex;
@@ -14,8 +32,8 @@ fieldset {
 .searchInput,
 .searchBtn {
   position: relative;
-  width: 200px;
-  height: 50px;
+  width: 12rem;
+  height: 3rem;
   padding: 0;
   display: inline-block;
   float: left;
@@ -79,7 +97,20 @@ fieldset {
   height: 2rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+  .searchInput,
+  .searchBtn {
+    width: 5rem;
+  }
+  .searchBtn {
+    width: 3rem;
+  }
+  .fa-search {
+    transform: translate(-75px, 0);
+  }
+}
+@media screen and (max-width: 322px) {
   .searchForm {
     display: none;
+  }
 }
