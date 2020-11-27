@@ -101,12 +101,15 @@ input:matches {
 }
 
 @media screen and (max-width: 450px) {
+  .searchForm {
+    width: 2rem;
+  }
   .searchInput,
   .searchBtn {
     width: 5rem;
   }
   .searchBtn {
-    width: 2rem;
+    width: 3rem;
   }
   .fa-search {
     transform: translate(-75px, 0);
