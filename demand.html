@@ -15,6 +15,7 @@
     <title>Hledám</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="hamburger.css" />
+    <link rel="stylesheet" href="search.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
@@ -31,17 +32,57 @@
         </ul>
       </div>
     </nav>
-    <div class="demandPage">
+    <div class="demandPage mediaQueries">
       <div class="header">
         <h1>Hledám</h1>
       </div>
+      <form class="searchForm">
+        <fieldset>
+          <input class="searchInput" type="search" /><button
+            class="searchBtn"
+            type="submit"
+          >
+            <i class="fa fa-search"></i>
+          </button>
+        </fieldset>
+      </form>
       <div class="searchCategoryBtn">
-        <button class="searchCategoryClothes">Oblečení</button>
-        <button class="searchCategoryKids">Vše pro děti</button>
-        <button class="searchCategoryHouse">Vše pro domácnost</button>
-        <button class="searchCategoryPlants">Květiny</button>
-        <button class="searchCategoryBooks">Knihy</button>
-        <button class="searchCategoryOthers">Ostatní</button>
+        <button
+          class="searchCategoryClothes"
+          onclick="window.location.href='category.html'"
+        >
+          Oblečení
+        </button>
+        <button
+          class="searchCategoryKids"
+          onclick="window.location.href='category.html'"
+        >
+          Vše pro děti
+        </button>
+        <button
+          class="searchCategoryHouse"
+          onclick="window.location.href='category.html'"
+        >
+          Vše pro domácnost
+        </button>
+        <button
+          class="searchCategoryPlants"
+          onclick="window.location.href='category.html'"
+        >
+          Květiny
+        </button>
+        <button
+          class="searchCategoryBooks"
+          onclick="window.location.href='category.html'"
+        >
+          Knihy
+        </button>
+        <button
+          class="searchCategoryOthers"
+          onclick="window.location.href='category.html'"
+        >
+          Ostatní
+        </button>
       </div>
     </div>
     <div class="footer">
