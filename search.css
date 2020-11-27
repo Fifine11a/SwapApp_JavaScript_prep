@@ -96,6 +96,9 @@ fieldset {
   content: url(img/search.png);
   height: 2rem;
 }
+input:matches {
+  border-radius: 3px;
+}
 
 @media screen and (max-width: 450px) {
   .searchInput,
