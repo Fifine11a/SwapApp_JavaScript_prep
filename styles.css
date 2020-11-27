@@ -18,13 +18,30 @@ body {
   letter-spacing: 0.1em;
   line-height: 1.5em;
 }
+.logo {
+  display: flex;
+  flex-direction: row-reverse;
+}
 .logo_velke {
   border-radius: 8px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  max-width: 600px;
+  margin-top: -3rem;
+}
+
+.logo_male {
+  border-radius: 8px;
+  display: block;
+  width: 25%;
+  margin-top: -3rem;
+  margin-right: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .logo_male {
+    width: 330px;
+  }
 }
 
 h1 {

@@ -78,3 +78,8 @@ fieldset {
   content: url(img/search.png);
   height: 2rem;
 }
+
+@media screen and (max-width: 400px) {
+  .searchForm {
+    display: none;
+}
