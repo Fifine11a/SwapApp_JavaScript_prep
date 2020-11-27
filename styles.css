@@ -73,7 +73,7 @@ h3 {
   font-size: 5vw;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   h1 {
     font-size: 100px;
     line-height: 110px;
@@ -252,9 +252,9 @@ figcaption {
   left: 0;
   top: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .mediaQueries {
-    width: 768px;
+    width: 992px;
     margin: 0 auto;
   }
 }
