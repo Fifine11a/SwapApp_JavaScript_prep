@@ -1,0 +1,18 @@
+.categoryDetailElm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.detailItem {
+  width: 45%;
+  border: 1px solid #212529;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.categoryDetailElm .itemImg {
+  width: 100%;
+}

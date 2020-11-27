@@ -12,10 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Hledám</title>
+    <title>Detail Kategorie</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="hamburger.css" />
     <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="categoryDetail.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
@@ -27,15 +28,20 @@
         <span></span>
         <ul id="menu">
           <a href="index.html"><li>Domů</li></a>
-          <a href="offer.html"><li>Nabízím</li></a>
+          <a href=""><li>položka menu</li></a>
           <a href="swapRules.html"><li>Pravidla swapu</li></a>
         </ul>
       </div>
     </nav>
-    <div class="demandPage mediaQueries">
+    <div class="CategoryDetail mediaQueries">
       <img class="logo_velke" src="img/logo.png" alt="swapApp logo" />
       <div class="header">
-        <h1>Hledám</h1>
+        <h1>Detail kategorie</h1>
+      </div>
+      <div class="breadcrumbsBtn">
+        <button>Drobek</button>
+        <button>Drobek</button>
+        <button>Drobek</button>
       </div>
       <form class="searchForm">
         <fieldset>
@@ -47,43 +53,21 @@
           </button>
         </fieldset>
       </form>
-      <div class="categoryBtn">
-        <button
-          class="category searchCategoryClothes"
-          onclick="window.location.href='category.html'"
-        >
-          Oblečení
-        </button>
-        <button
-          class="category searchCategoryKids"
-          onclick="window.location.href='category.html'"
-        >
-          Vše pro děti
-        </button>
-        <button
-          class="category searchCategoryHouse"
-          onclick="window.location.href='category.html'"
-        >
-          Vše pro domácnost
-        </button>
-        <button
-          class="category searchCategoryPlants"
-          onclick="window.location.href='category.html'"
-        >
-          Květiny
-        </button>
-        <button
-          class="category searchCategoryBooks"
-          onclick="window.location.href='category.html'"
-        >
-          Knihy
-        </button>
-        <button
-          class="category searchCategoryOthers"
-          onclick="window.location.href='category.html'"
-        >
-          Ostatní
-        </button>
+      <div class="categoryDetailElm">
+        <div class="detailItem">
+          <img class="itemImg" src="img/logo.png" alt="fotografie předmětu" />
+          <span class="itemTitle">Titulek položky</span>
+          <span class="userNameOffer"
+            >Jméno nabízejícího s odkazem na mail</span
+          >
+        </div>
+        <div class="detailItem">
+          <img class="itemImg" src="img/logo.png" alt="fotografie předmětu" />
+          <span class="itemTitle">Titulek položky</span>
+          <span class="userNameOffer"
+            >Jméno nabízejícího s odkazem na mail</span
+          >
+        </div>
       </div>
     </div>
     <div class="footer">
