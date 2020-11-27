@@ -14,7 +14,7 @@ fieldset {
 }
 .infoBtn {
   height: 50px;
-  width: 50px;
+  width: 55px;
   box-sizing: border-box;
   background-color: #dee2e6;
 }
@@ -101,9 +101,6 @@ input:matches {
 }
 
 @media screen and (max-width: 450px) {
-  .searchForm {
-    width: 2rem;
-  }
   .searchInput,
   .searchBtn {
     width: 5rem;
